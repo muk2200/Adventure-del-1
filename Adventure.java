@@ -65,7 +65,10 @@ public class Adventure {
             String userInput = scanner.nextLine().toLowerCase();
 
              if (userInput.equals("look")) {
-                System.out.println("You are in " + currentRoom.getDescription());
+                 System.out.println("You are in " + currentRoom.getDescription());
+
+
+
 
             } else if (userInput.equals("east")) {
                 if (currentRoom.getEast() != null) {
@@ -100,9 +103,9 @@ public class Adventure {
                      System.out.println("You can't go there");
 
                  }
-             }
-            if (userInput.equals("help")) {
-                System.out.println("Try to move another direction" +
+
+             } else if (userInput.equals("help")) {
+                System.out.println("Try to move another direction \n" +
                         "Type,'east' to move left \n" +
                         "Type 'west' to move right \n" +
                         "Type 'north' to move up \n" +
@@ -111,9 +114,12 @@ public class Adventure {
                         "Type 'look' to look around \n" +
                         "Type 'help' to get help \n");
 
-                if (userInput.equals("exit")) System.out.println("Thank you for playing, close the tab");
+
             }
-        }
+           else  if (userInput.equals("exit"))
+                System.out.println("Thank you for playing, close the tab");
+        } else
+
     }
 }
 
