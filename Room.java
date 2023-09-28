@@ -8,6 +8,11 @@ public class Room {
     private Room south;
     private Room west;
 
+    public Room(){
+
+
+    }
+
     public Room (String name, String description) {
         this.name = name;
         this.description = description;
