@@ -51,6 +51,23 @@ public class Map {
     }
         public void setCurrentRoom(Room room){
         this.currentRoom = room;
-
     }
+    private String item;
+    private String itemDescription;
+
+    public Map() {
+        this.item = item;
+        this.itemDescription = itemDescription;
+    }
+
+    Item item1 = new Item("waterbottle", "pickup the waterbottle");
+    Item item2 = new Item("sword", "pickup the sword");
+    Item item3 = new Item("scooter", "pickup the scooter");
+    Item item4 = new Item("key", "pickup the key");
+    Item item5 = new Item("napkin", "pickup the napkin");
+    Item item6 = new Item("book", "pickup the book");
+    Item item7 = new Item("remote", "pickup the remote");
+    Item item8 = new Item("towel", "pickup the towel");
+    Item item9 = new Item("pillow", "pickup the pillow");
+
 }
