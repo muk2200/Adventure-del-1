@@ -6,7 +6,7 @@ public class Main {
 
     Adventure adventure  = new Adventure();
     Scanner scanner = new Scanner(System.in);
-
+        Scanner s = new Scanner(System.in);
     adventure.play();
 
      }
