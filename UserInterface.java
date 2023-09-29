@@ -20,7 +20,8 @@ public class UserInterface {
                 "Type 'south' to move down \n" +
                 "Type 'exit' to exit \n" +
                 "Type 'look' to look around \n" +
-                "Type 'help' to get help \n");
+                "Type 'help' to get help \n" +
+                "Eshas first commit");
 
         boolean game = true;
         while (game) {
