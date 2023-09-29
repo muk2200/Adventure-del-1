@@ -7,14 +7,12 @@ private Player player;
         player = new Player(map.getCurrentRoom());
     }
 
-
     public void play() {
-
     }
 
     public void goEast(){
         if (map.getCurrentRoom().getEast() != null) {
-            map.setCurrentRoom( map.getCurrentRoom().getEast());
+            map.setCurrentRoom(map.getCurrentRoom().getEast());
             System.out.println("You go east");
         } else {
             System.out.println("You can't go there");
@@ -23,45 +21,28 @@ private Player player;
 
     public void goWest(){
         if (map.getCurrentRoom().getWest() != null) {
-        map.setCurrentRoom(map.getCurrentRoom().getWest());
-        System.out.println("You go west");
+            map.setCurrentRoom(map.getCurrentRoom().getWest());
+            System.out.println("You go west");
         } else {
-        System.out.println("You can't go there");
+            System.out.println("You can't go there");
         }
     }
     public void goNorth(){
        if (map.getCurrentRoom().getSouth() != null) {
-       map.setCurrentRoom(map.getCurrentRoom().getSouth());
-       System.out.println("You go south");
+           map.setCurrentRoom(map.getCurrentRoom().getSouth());
+           System.out.println("You go south");
        } else {
-       System.out.println("You can't go there");
+           System.out.println("You can't go there");
        }
 
     }
     public void goSouth(){
         if (map.getCurrentRoom().getNorth() != null) {
-                        map.setCurrentRoom(map.getCurrentRoom().getNorth());
-                        System.out.println("You go north");
-                    } else {
-                        System.out.println("You can't go there");
-                    }
-
-
+            map.setCurrentRoom(map.getCurrentRoom().getNorth());
+            System.out.println("You go north");
+        } else {
+            System.out.println("You can't go there");
+        }
     }
-
 }
-
 // Af Muhammad & Jawad
-
-
-
-
-
-
-
-
-
-
-
-
-

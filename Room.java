@@ -10,12 +10,10 @@ public class Room {
     private Room south;
     private Room west;
 
+    private String item;
+    private String itemDescription;
+
     private ArrayList<Item> inventory;
-
-    public Room(){
-
-
-    }
 
     public Room (String name, String description) {
         this.name = name;

@@ -9,5 +9,4 @@ public class Player {
 
         this.room = room;
     }
-
 }
