@@ -9,6 +9,7 @@ public class UserInterface {
         startGame();
     }
 
+
     public void startGame() {
         Scanner scanner = new Scanner(System.in);
 
