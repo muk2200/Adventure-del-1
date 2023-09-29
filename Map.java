@@ -15,6 +15,18 @@ public class Map {
         Room room8 = new Room("Room 8", "This is the sauna place");
         Room room9 = new Room("Room 9", "This is a bedroom, but there is only a small bed");
 
+
+
+        Item item1 = new Item("waterbottle", "pick up the waterbottle");
+        Item item2 = new Item("sword", "pick up the sword");
+        Item item3 = new Item("scooter", "pick up the scooter");
+        Item item4 = new Item("key", "pick up the key");
+        Item item5 = new Item("napkin", "pick up the napkin");
+        Item item6 = new Item("book", "pick up the book");
+        Item item7 = new Item("remote", "pick up the remote");
+        Item item8 = new Item("towel", "pick up the towel");
+        Item item9 = new Item("pillow", "pick up the pillow");
+
         room1.setEast(room2);
         room1.setSouth(room4);
 

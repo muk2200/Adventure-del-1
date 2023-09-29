@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 
 public class Room {
-
     private String name;
     private String description;
-
     private Room north;
     private Room east;
     private Room south;
@@ -69,4 +67,4 @@ public class Room {
 
 }
 
-// Af Muhammad & Jawad
+
