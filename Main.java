@@ -5,10 +5,8 @@ public class Main {
 
 
     Adventure adventure  = new Adventure();
-    Scanner scanner = new Scanner(System.in);
-        Scanner s = new Scanner(System.in);
-    adventure.play();
 
+    UserInterface ui = new UserInterface(adventure);
+    ui.startGame();
      }
     }
-// Af Muhammad & Jawad

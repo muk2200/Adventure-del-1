@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Room {
@@ -11,23 +12,38 @@ public class Room {
     private String item;
     private String itemDescription;
 
-    private ArrayList<Item> inventory;
+    private ArrayList<Item> items;
 
-    public Room (String name, String description) {
+    public Room(String name, String description) {
         this.name = name;
         this.description = description;
         this.north = null;
         this.east = null;
         this.south = null;
         this.west = null;
+        this.items = new ArrayList<>();
 
     }
-    public String getDescription(){
+public ArrayList<Item> getItems(){
+        return items;
+}
+
+    public String getDescription() {
         return description;
     }
-    public void setDescription(String name){
+
+    public void setDescription(String name) {
 
         this.description = description;
+    }
+
+    public void addItem(Item item){
+        items.add(item);
+
+    }
+
+    public void dropItem(Item item){
+        items.remove(item);
     }
 
     public String getName(){
@@ -65,6 +81,9 @@ public class Room {
         this.west = west;
     }
 
+    public void setItem(String item) {
+        this.item = item;
+    }
 }
 
 

@@ -48,5 +48,9 @@ private Player player;
     public Room getCurrentRoom() {
         return map.getCurrentRoom();
     }
+
+    public String look() {
+        return map.look();
+    }
 }
 // Af Muhammad & Jawad

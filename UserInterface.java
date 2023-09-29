@@ -5,8 +5,8 @@ public class UserInterface {
     Adventure adventure = new Adventure();
 
 
-    public UserInterface() {
-        startGame();
+    public UserInterface(Adventure adventure) {
+        this.adventure = adventure;
     }
 
 
@@ -21,15 +21,14 @@ public class UserInterface {
                 "Type 'south' to move down \n" +
                 "Type 'exit' to exit \n" +
                 "Type 'look' to look around \n" +
-                "Type 'help' to get help \n" +
-                "Eshas first commit");
+                "Type 'help' to get help \n" );
 
         boolean game = true;
         while (game) {
             String userInput = scanner.nextLine().toLowerCase();
 
             if (userInput.equals("look")) {
-                System.out.println("You are in " + adventure.getCurrentRoom().getDescription());
+                System.out.println("You are in " + adventure.look());
 
             } else if (userInput.equals("east")) {
                 adventure.goEast();

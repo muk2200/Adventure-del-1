@@ -3,12 +3,12 @@ public class Item {
     private String description;
 
 
-    public Item(String name, String description) {
+    public Item(String item, String description) {
         this.item = item;
         this.description = description;
     }
 
-    public String getitem() {
+    public String getItem() {
         return item;
     }
 

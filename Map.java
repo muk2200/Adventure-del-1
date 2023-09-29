@@ -17,15 +17,15 @@ public class Map {
 
 
 
-        Item item1 = new Item("waterbottle", "pick up the waterbottle");
-        Item item2 = new Item("sword", "pick up the sword");
-        Item item3 = new Item("scooter", "pick up the scooter");
-        Item item4 = new Item("key", "pick up the key");
-        Item item5 = new Item("napkin", "pick up the napkin");
-        Item item6 = new Item("book", "pick up the book");
-        Item item7 = new Item("remote", "pick up the remote");
-        Item item8 = new Item("towel", "pick up the towel");
-        Item item9 = new Item("pillow", "pick up the pillow");
+        room1.addItem (new Item ("waterbottle", "pick up the waterbottle"));
+        room2.addItem (new Item ("sword", "pick up the sword"));
+        room3.addItem (new Item ("scooter", "pick up the scooter"));
+        room4.addItem (new Item ("key", "pick up the key"));
+        room5.addItem (new Item ("napkin", "pick up the napkin"));
+        room6.addItem (new Item ("book", "pick up the book"));
+        room7.addItem (new Item ("remote", "pick up the remote"));
+        room8.addItem (new Item ("towel", "pick up the towel"));
+        room9.addItem (new Item ("pillow", "pick up the pillow"));
 
         room1.setEast(room2);
         room1.setSouth(room4);
@@ -65,5 +65,9 @@ public class Map {
 
     public void setCurrentRoom(Room room) {
         this.currentRoom = room;
+    }
+
+    public String look() {
+        return currentRoom.getName() + " " + currentRoom.getDescription();
     }
 }
