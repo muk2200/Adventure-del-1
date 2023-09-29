@@ -44,5 +44,9 @@ private Player player;
             System.out.println("You can't go there");
         }
     }
+
+    public Room getCurrentRoom() {
+        return map.getCurrentRoom();
+    }
 }
 // Af Muhammad & Jawad

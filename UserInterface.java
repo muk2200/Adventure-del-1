@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class UserInterface {
 
     Adventure adventure = new Adventure();
-    Map map = new Map();
+
 
     public UserInterface() {
         startGame();
@@ -13,7 +13,7 @@ public class UserInterface {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the game called Adventure");
-        System.out.println("You start in " + map.getCurrentRoom().getName());
+        System.out.println("You start in " + adventure.getCurrentRoom().getName());
         System.out.println("Type,'east' to move right \n" +
                 "Type 'west' to move left \n" +
                 "Type 'north' to move up \n" +
@@ -28,7 +28,7 @@ public class UserInterface {
             String userInput = scanner.nextLine().toLowerCase();
 
             if (userInput.equals("look")) {
-                System.out.println("You are in " + map.getCurrentRoom().getDescription());
+                System.out.println("You are in " + adventure.getCurrentRoom().getDescription());
 
             } else if (userInput.equals("east")) {
                 adventure.goEast();
